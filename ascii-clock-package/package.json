@@ -1,0 +1,21 @@
+{
+  "name": "ascii-clock-package",
+  "version": "1.0.0",
+  "description": "ASCII Clock: terminal-based Node.js clock in large ASCII art, updates every second",
+  "main": "ascii-clock-package/asci.js",
+  "bin": {
+    "ascii-clock": "ascii-clock-package/asci.js"
+  },
+  "scripts": {
+    "start": "node ascii-clock-package/asci.js",
+    "test": "node ascii-clock-package/test.js"
+  },
+  "keywords": ["ascii", "clock", "terminal", "time"],
+  "author": "Asheri",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asheri-crypto/ascii-clock-package.git"
+  }
+}

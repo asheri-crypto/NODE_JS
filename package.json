@@ -1,0 +1,17 @@
+{
+  "name": "server.js",
+  "version": "1.0.0",
+  "description": "The dataset that decribes world most beautiful and amazing places",
+  "keywords": [
+    "wild",
+    "horizon"
+  ],
+  "license": "ISC",
+  "author": "Asheri",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    
+    "start": "node server.js"
+  }
+}
