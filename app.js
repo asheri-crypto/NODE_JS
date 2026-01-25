@@ -1,7 +1,7 @@
 // we are going to read the user input from the command line
 //we will need to use a module of node.js because node.js does not
 // have built-in support for reading user input from the command line
-//here we will use the 'readline'module.
+//here we will use the 'readline'module
 
 const readline = require('readline');
 
