@@ -13,14 +13,30 @@ console.log("this is my first api");
 // so we are going in our packet.json file and change type to module 
 
 
-import http from 'node:http'
+// server.js
+import http
+ from 'node:http';   // ← more common & explicit style
 
-const PORT = 8000
+const PORT = 5000;
 
 const server = http.createServer((req, res) => {
-  res.end('Hello from the server!')
+  // serve when there is only url of /api
 
-})
+   if (req.url === '/api' && req.method === 'GET') {
+  console.log(req.url);
+   }
 
-server.listen(PORT, () => console.log(`server running on port: ${PORT}`))
+  // Better to set header once
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+
+  res.write("This is my first api\n");
+  res.write("This is the second line of response\n");
+  res.end('Hello from the server!');
+});
+
+server.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+// now we can run our server using node server.js
 
