@@ -22,7 +22,7 @@ const PORT = 5000;
 const server = http.createServer((req, res) => {
   // serve when there is only url of /api
 
-   if (req.url === '/api' && req.method === 'GET') {
+   if (req.url === '/api' && req.method === 'GET') { 
   console.log(req.url);
    }
 
